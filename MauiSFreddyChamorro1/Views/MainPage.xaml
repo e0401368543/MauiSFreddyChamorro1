@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiSFreddyChamorro1.Views.MainPage"
+             Title="Datos Personales">
+    <VerticalStackLayout Spacing="20"
+                         Padding="15">
+        <Label 
+            Text="Tarea Primera Semana "
+           HorizontalOptions="Center"
+            TextColor="Blue"/>
+        <Entry x:Name="txtNombre"
+           Placeholder="Ingresa tu nombre"
+              Keyboard="Text"
+           />
+        <Entry x:Name="txtApellido"
+           Placeholder="Ingresa tu Apellido"
+              Keyboard="Text"             
+           />
+        <Entry x:Name="txtEdad"
+           Placeholder="Ingresa tu edad"
+              Keyboard="Numeric"
+              MaxLength="3"
+         />
+        <Entry x:Name="txtSalario"
+           Placeholder="Ingresa tu Salario"
+              Keyboard="Numeric"
+              MaxLength="9"
+         />
+        <Button x:Name="btnCalcularIESS"
+                Text="Calcular IESS"
+            Clicked="btnCalcularIESS_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
